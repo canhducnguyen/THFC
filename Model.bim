@@ -5506,25 +5506,6 @@
             "formatString": "#,0"
           },
           {
-            "name": "Sales Man viếng thăm theo khung giờ",
-            "expression": [
-              " ",
-              "VAR minhour =",
-              "    MIN ( 'Hour in Day'[Hour] )",
-              "VAR maxhour =",
-              "    MAX ( 'Hour in Day'[Hour] )",
-              "VAR result =",
-              "    CALCULATE (",
-              "        DISTINCTCOUNTNOBLANK ( 'Fact - Actual Visit'[Sales Man] ),",
-              "        HOUR ( 'Fact - Actual Visit'[Start Time] ) >= minhour",
-              "            && HOUR ( 'Fact - Actual Visit'[Start Time] ) <= maxhour",
-              "    )",
-              "RETURN",
-              "    result"
-            ],
-            "formatString": "#,0"
-          },
-          {
             "name": "Plan Call/ Route/ Working Day",
             "expression": [
               "",
@@ -5582,6 +5563,11 @@
           {
             "name": "canh",
             "expression": "1"
+          },
+          {
+            "name": "canhnguyen",
+            "expression": "2",
+            "formatString": "#,0"
           }
         ]
       },
@@ -16023,9 +16009,6 @@
                 "name": "Visit Duration Time (mins)"
               },
               {
-                "name": "Sales Man viếng thăm theo khung giờ"
-              },
-              {
                 "name": "Plan Call/ Route/ Working Day"
               },
               {
@@ -16045,6 +16028,9 @@
               },
               {
                 "name": "Working Time on Route (mins)"
+              },
+              {
+                "name": "canhnguyen"
               }
             ]
           },
@@ -18663,9 +18649,6 @@
                 "name": "Plan Call/ Route/ Working Day"
               },
               {
-                "name": "Sales Man viếng thăm theo khung giờ"
-              },
-              {
                 "name": "Visit Duration Time (mins)"
               },
               {
@@ -18682,6 +18665,9 @@
               },
               {
                 "name": "Working Time on Route (mins)"
+              },
+              {
+                "name": "canhnguyen"
               }
             ]
           },
