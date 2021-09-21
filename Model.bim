@@ -485,7 +485,7 @@
           {
             "name": "% Passing Days",
             "expression": " DIVIDE([Passing Days], [Total Working Day])",
-            "formatString": "0.00 %;-0.00 %;0.00 %"
+            "formatString": "0.00%;-0.00%;0.00%"
           },
           {
             "name": "Days Left",
@@ -495,7 +495,7 @@
           {
             "name": "% Days Left",
             "expression": " DIVIDE([Days Left], [Total Working Day])",
-            "formatString": "0.00 %;-0.00 %;0.00 %"
+            "formatString": "0.00%;-0.00%;0.00%"
           },
           {
             "name": "Passing Months",
@@ -534,7 +534,7 @@
           {
             "name": "% Passing Days NPP",
             "expression": " DIVIDE([Passing Days NPP], [Total Working Day NPP])",
-            "formatString": "0.0 %;-0.0 %;0.0 %"
+            "formatString": "0.0%;-0.0%;0.0%"
           },
           {
             "name": "Days Left NPP",
@@ -564,7 +564,7 @@
               "RETURN",
               "    DIVIDE ( DIVIDE ( [Sell Out Amt/Qty MTD], aoptargetmtd ), Timegone, BLANK () )"
             ],
-            "formatString": "0.0 %;-0.0 %;0.0 %"
+            "formatString": "0.0%;-0.0%;0.0%"
           },
           {
             "name": "Days Left THS",
@@ -577,7 +577,7 @@
           {
             "name": "% Passing Days THS",
             "expression": " DIVIDE([Passing Days THS], [Total Working Day THS])",
-            "formatString": "0.0 %;-0.0 %;0.0 %"
+            "formatString": "0.0%;-0.0%;0.0%"
           },
           {
             "name": "ADS THS",
@@ -602,7 +602,7 @@
               "RETURN",
               "    DIVIDE ( DIVIDE ( [Sell Out Amt/Qty MTD], aoptargetmtd ), Timegone, BLANK () )"
             ],
-            "formatString": "0.0 %;-0.0 %;0.0 %"
+            "formatString": "0.0%;-0.0%;0.0%"
           },
           {
             "name": "Month Selected",
@@ -648,7 +648,7 @@
               "  DIVIDE ( [Passing Days THS], [Total Working Day THS], BLANK () )",
               ""
             ],
-            "formatString": "0.0 %;-0.0 %;0.0 %"
+            "formatString": "0.0%;-0.0%;0.0%"
           },
           {
             "name": "Time Gone NPP",
@@ -656,7 +656,7 @@
               "  DIVIDE ( [Passing Days NPP], [Total Working Day NPP], BLANK () )",
               ""
             ],
-            "formatString": "0.0 %;-0.0 %;0.0 %"
+            "formatString": "0.0%;-0.0%;0.0%"
           }
         ]
       },
@@ -1712,13 +1712,13 @@
           {
             "name": "Sell Out Amt Growth % vs LM",
             "expression": " IF(ISBLANK(DIVIDE([Sell Out Amt], [Sell Out Amt LM])), BLANK(), DIVIDE([Sell Out Amt], [Sell Out Amt LM]) - 1)",
-            "formatString": "0.00 %;-0.00 %;0.00 %",
+            "formatString": "0.00%;-0.00%;0.00%",
             "displayFolder": "Sell Out"
           },
           {
             "name": "Sell Out Amt Growth % vs LY",
             "expression": " IF(ISBLANK(DIVIDE([Sell Out Amt], [Sell Out Amt LY])), BLANK(), DIVIDE([Sell Out Amt], [Sell Out Amt LY]) - 1)",
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "Sell Out"
           },
           {
@@ -1765,13 +1765,13 @@
           {
             "name": "Sell Out Qty Growth % vs LM",
             "expression": " IF(ISBLANK(DIVIDE([Sell Out Qty], [Sell Out Qty LM])), BLANK(), DIVIDE([Sell Out Qty], [Sell Out Qty LM]) - 1)",
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "Sell Out"
           },
           {
             "name": "Sell Out Qty Growth % vs LY",
             "expression": " IF(ISBLANK(DIVIDE([Sell Out Qty], [Sell Out Qty LY])), BLANK(), DIVIDE([Sell Out Qty], [Sell Out Qty LY]) - 1)",
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "Sell Out"
           },
           {
@@ -1813,37 +1813,37 @@
           {
             "name": "Sell Out Amt % vs Target",
             "expression": " DIVIDE([Sell Out Amt], [Sell Out Amt Target])",
-            "formatString": "0.00 %;-0.00 %;0.00 %",
+            "formatString": "0.00%;-0.00%;0.00%",
             "displayFolder": "Sell Out"
           },
           {
             "name": "Sell Out Qty % vs Target",
             "expression": " DIVIDE([Sell Out Qty], [Sell Out Qty Target])",
-            "formatString": "0.00 %;-0.00 %;0.00 %",
+            "formatString": "0.00%;-0.00%;0.00%",
             "displayFolder": "Sell Out"
           },
           {
             "name": "Sell Out Amt % vs AOP",
             "expression": " DIVIDE([Sell Out Amt], [Sell Out Amt AOP])",
-            "formatString": "#,0.0 %;-#,0.0 %;#,0.0 %",
+            "formatString": "#,0.0%;-#,0.0%;#,0.0%",
             "displayFolder": "Sell Out"
           },
           {
             "name": "Sell Out Qty % vs AOP",
             "expression": " DIVIDE([Sell Out Qty], [Sell Out Qty AOP])",
-            "formatString": "#,0.0 %;-#,0.0 %;#,0.0 %",
+            "formatString": "#,0.0%;-#,0.0%;#,0.0%",
             "displayFolder": "Sell Out"
           },
           {
             "name": "Sell Out Amt % vs AOP FY",
             "expression": " DIVIDE([Sell Out Amt], [Sell Out Amt AOP FY])",
-            "formatString": "#,0.0 %;-#,0.0 %;#,0.0 %",
+            "formatString": "#,0.0%;-#,0.0%;#,0.0%",
             "displayFolder": "Sell Out"
           },
           {
             "name": "Sell Out Qty % vs AOP FY",
             "expression": " DIVIDE([Sell Out Qty], [Sell Out Qty AOP FY])",
-            "formatString": "#,0.0 %;-#,0.0 %;#,0.0 %",
+            "formatString": "#,0.0%;-#,0.0%;#,0.0%",
             "displayFolder": "Sell Out"
           },
           {
@@ -1876,25 +1876,25 @@
           {
             "name": "Sell Out Amt Projection % vs Target",
             "expression": " DIVIDE([Sell Out Amt Projection], [Sell Out Amt Target])",
-            "formatString": "0.00 %;-0.00 %;0.00 %",
+            "formatString": "0.00%;-0.00%;0.00%",
             "displayFolder": "Sell Out"
           },
           {
             "name": "Sell Out Qty Projection % vs Target",
             "expression": " DIVIDE([Sell Out Qty Projection], [Sell Out Qty Target])",
-            "formatString": "0.00 %;-0.00 %;0.00 %",
+            "formatString": "0.00%;-0.00%;0.00%",
             "displayFolder": "Sell Out"
           },
           {
             "name": "Sell Out Amt Projection % vs AOP",
             "expression": " DIVIDE([Sell Out Amt Projection], [Sell Out Amt AOP])",
-            "formatString": "0.00 %;-0.00 %;0.00 %",
+            "formatString": "0.00%;-0.00%;0.00%",
             "displayFolder": "Sell Out"
           },
           {
             "name": "Sell Out Qty Projection % vs AOP",
             "expression": " DIVIDE([Sell Out Qty Projection], [Sell Out Qty AOP])",
-            "formatString": "0.00 %;-0.00 %;0.00 %",
+            "formatString": "0.00%;-0.00%;0.00%",
             "displayFolder": "Sell Out"
           },
           {
@@ -1945,25 +1945,25 @@
           {
             "name": "ASO Growth % vs LM",
             "expression": " IF(OR([# of ASO]=0, [# of ASO LM]=0), BLANK(), DIVIDE([# of ASO]- [# of ASO LM], [# of ASO LM]))",
-            "formatString": "#,0.00 %;-#,0.00 %;#,0.00 %",
+            "formatString": "#,0.00%;-#,0.00%;#,0.00%",
             "displayFolder": "KPI"
           },
           {
             "name": "ASO Growth % vs LY",
             "expression": " IF(OR([# of ASO]=0, [# of ASO LY]=0), BLANK(), DIVIDE([# of ASO] - [# of ASO LY], [# of ASO LY]))",
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "Sell Out"
           },
           {
             "name": "ASO MTD Growth % vs LM",
             "expression": " IF(ISBLANK(DIVIDE([# of ASO MTD], [# of ASO MTD LM])), BLANK(), DIVIDE([# of ASO MTD], [# of ASO MTD LM]))",
-            "formatString": "0.00 %;-0.00 %;0.00 %",
+            "formatString": "0.00%;-0.00%;0.00%",
             "displayFolder": "KPI"
           },
           {
             "name": "ASO YTD Growth % vs LM",
             "expression": " IF(ISBLANK(DIVIDE([# of ASO YTD], [# of ASO YTD LY])), BLANK(), DIVIDE([# of ASO YTD], [# of ASO YTD LY]))",
-            "formatString": "0.00 %;-0.00 %;0.00 %",
+            "formatString": "0.00%;-0.00%;0.00%",
             "displayFolder": "KPI"
           },
           {
@@ -2175,7 +2175,7 @@
           {
             "name": "% Strike Rate",
             "expression": " DIVIDE([# of Successful Calls], [# of Calls Plan])",
-            "formatString": "0.00 %;-0.00 %;0.00 %",
+            "formatString": "0.00%;-0.00%;0.00%",
             "displayFolder": "KPI"
           },
           {
@@ -2534,13 +2534,13 @@
           {
             "name": "Store Growth % vs LM",
             "expression": " IF(ISBLANK(DIVIDE([# of Stores], [# of Store LM])), BLANK(), DIVIDE([# of Stores], [# of Store LM]))-1",
-            "formatString": "0 %;-0 %;0 %",
+            "formatString": "0%;-0%;0%",
             "displayFolder": "KPI"
           },
           {
             "name": "Store Growth % vs LY",
             "expression": " IF(ISBLANK(DIVIDE([# of Stores], [# of Store LY])), BLANK(), DIVIDE([# of Stores], [# of Store LY]))-1",
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "KPI"
           },
           {
@@ -2840,25 +2840,25 @@
           {
             "name": "Sell Out True Mart Net Amt % vs AOP",
             "expression": " DIVIDE([Sell Out True Mart Net Amt], [Sell Out Amt AOP])",
-            "formatString": "0.00 %;-0.00 %;0.00 %",
+            "formatString": "0.00%;-0.00%;0.00%",
             "displayFolder": "Sell Out"
           },
           {
             "name": "Sell Out True Mart Net Amt % vs Target",
             "expression": " DIVIDE([Sell Out True Mart Net Amt], [Sell Out Amt Target])",
-            "formatString": "0.00 %;-0.00 %;0.00 %",
+            "formatString": "0.00%;-0.00%;0.00%",
             "displayFolder": "Sell Out"
           },
           {
             "name": "Sell Out True Mart Qty % vs AOP",
             "expression": " DIVIDE([Sell Out True Mart Qty], [Sell Out Qty AOP])",
-            "formatString": "0.00 %;-0.00 %;0.00 %",
+            "formatString": "0.00%;-0.00%;0.00%",
             "displayFolder": "Sell Out"
           },
           {
             "name": "Sell Out True Mart Qty % vs Target",
             "expression": " DIVIDE([Sell Out True Mart Qty], [Sell Out Qty Target])",
-            "formatString": "0.00 %;-0.00 %;0.00 %",
+            "formatString": "0.00%;-0.00%;0.00%",
             "displayFolder": "Sell Out"
           },
           {
@@ -2906,7 +2906,7 @@
           {
             "name": "% THs Provide Standard Stock  - Chill",
             "expression": " DIVIDE([THs Closing Stock Qty - Chill],[Sell out Qty 3D- Chill],0)",
-            "formatString": "0.00 %;-0.00 %;0.00 %",
+            "formatString": "0.00%;-0.00%;0.00%",
             "displayFolder": "Sell Out"
           },
           {
@@ -2984,7 +2984,7 @@
           {
             "name": "% Strike Rate YTD",
             "expression": " TOTALYTD([% Strike Rate],'Dim - Date'[Date])",
-            "formatString": "0.00 %;-0.00 %;0.00 %",
+            "formatString": "0.00%;-0.00%;0.00%",
             "displayFolder": "KPI"
           },
           {
@@ -3148,7 +3148,7 @@
           {
             "name": "% Promotion Amt / Sell out",
             "expression": " DIVIDE([Total Promotion Amt],[Sell Out Amt],BLANK())",
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "Sell Out"
           },
           {
@@ -3195,13 +3195,13 @@
           {
             "name": "% Promotion Amt / Sell out LM",
             "expression": " CALCULATE([% Promotion Amt / Sell out],DATEADD('Dim - Date'[Date],-1,MONTH))",
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "Sell Out"
           },
           {
             "name": "% Promotion Amt / Sell out LY",
             "expression": " CALCULATE([% Promotion Amt / Sell out],SAMEPERIODLASTYEAR('Dim - Date'[Date]))",
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "KPI"
           },
           {
@@ -3477,7 +3477,7 @@
               "VAR temp = DIVIDE(soamtqty,soaoptarget,0)",
               "RETURN temp"
             ],
-            "formatString": "#,0.0 %;-#,0.0 %;#,0.0 %",
+            "formatString": "#,0.0%;-#,0.0%;#,0.0%",
             "displayFolder": "Sell Out"
           },
           {
@@ -3541,7 +3541,7 @@
           {
             "name": "% New ASO / ASO",
             "expression": " DIVIDE([# of New ASO],[# of ASO],0)",
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "KPI"
           },
           {
@@ -3599,7 +3599,7 @@
           {
             "name": "Sell Out Amt/Qty Growth % vs LM",
             "expression": " IF(ISBLANK(DIVIDE([Sell Out Amt/Qty], [Sell Out Amt/Qty LM])), BLANK(), DIVIDE([Sell Out Amt/Qty], [Sell Out Amt/Qty LM]) - 1)",
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "Sell Out"
           },
           {
@@ -3630,7 +3630,7 @@
               "RETURN ",
               "IF(ISBLANK(result), BLANK(),result- 1)"
             ],
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "Sell Out"
           },
           {
@@ -3806,7 +3806,7 @@
               "return ",
               "CALCULATE([Sell Out Amt Growth % vs LM], DATESINPERIOD('Dim - Date'[Date], MAX('Dim - Date'[Date]), _numperiod, MONTH))"
             ],
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "Sell Out"
           },
           {
@@ -3856,7 +3856,7 @@
           {
             "name": "Sell Out Net Amt ASO Asset Growth % vs LM",
             "expression": " IF(ISBLANK(DIVIDE([Sell Out Net Amt ASO Asset], [Sell Out Net Amt ASO Asset LM])), BLANK(), DIVIDE([Sell Out Net Amt ASO Asset], [Sell Out Net Amt ASO Asset LM]) - 1)",
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "Sell Out"
           },
           {
@@ -3874,7 +3874,7 @@
           {
             "name": "# of ASO Asset Growth % vs LM",
             "expression": " IF(ISBLANK(DIVIDE([# of ASO Asset], [# of ASO Asset LM])), BLANK(), DIVIDE([# of ASO Asset], [# of ASO Asset LM]) - 1)",
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "KPI"
           },
           {
@@ -3886,19 +3886,19 @@
           {
             "name": "Sell Out Net Amt ASO Asset / Sell Out Net Amt",
             "expression": " DIVIDE([Sell Out Net Amt ASO Asset],[Sell Out Net Amt],BLANK())",
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "Sell Out"
           },
           {
             "name": "Sell Out Net Amt ASO Asset LM/ Sell Out Net Amt LM",
             "expression": " DIVIDE([Sell Out Net Amt ASO Asset LM],CALCULATE([Sell Out Net Amt],DATEADD('Dim - Date'[Date],-1,MONTH)),BLANK())",
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "Sell Out"
           },
           {
             "name": "# ASO Assets/# ASO",
             "expression": " DIVIDE([# of ASO Asset],[# of ASO],BLANK())",
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "KPI"
           },
           {
@@ -3949,7 +3949,7 @@
           {
             "name": "% New Stores / Stores",
             "expression": " DIVIDE([# of New Stores],[# of Stores],BLANK())",
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "KPI"
           },
           {
@@ -3961,18 +3961,18 @@
               "RETURN",
               "    DIVIDE ( [# of invoices], TotalInvoice, 0 )"
             ],
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "KPI"
           },
           {
             "name": "Club Sell Out Growth % vs LM",
             "expression": " IF(ISBLANK(DIVIDE([Club Sell Out Amt], [Club Sell Out Amt LM])), BLANK(), DIVIDE([Club Sell Out Amt], [Club Sell Out Amt LM]) - 1)",
-            "formatString": "0.0 %;-0.0 %;0.0 %"
+            "formatString": "0.0%;-0.0%;0.0%"
           },
           {
             "name": "Club ASO Active Growth % vs LM",
             "expression": " IF(ISBLANK(DIVIDE([# of Club ASO Active], [# of Club ASO Active LM])), BLANK(), DIVIDE([# of Club ASO Active], [# of Club ASO Active LM]) - 1)",
-            "formatString": "0.0 %;-0.0 %;0.0 %"
+            "formatString": "0.0%;-0.0%;0.0%"
           },
           {
             "name": "Sell Out AOP/Target YTD",
@@ -4013,7 +4013,7 @@
               "    DIVIDE ( [Sell Out Amt/Qty YTD],amtytdlm) - 1",
               ")"
             ],
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "Sell Out"
           },
           {
@@ -4052,7 +4052,7 @@
           {
             "name": "% New Stores / Stores YTD",
             "expression": " DIVIDE([# of New Stores YTD],[# of Stores YTD],BLANK())",
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "KPI"
           },
           {
@@ -4066,7 +4066,7 @@
               "    DIVIDE ( [# of Stores YTD],amtytdlm) - 1",
               ")"
             ],
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "KPI"
           },
           {
@@ -4158,7 +4158,7 @@
               "VAR temp = DIVIDE(soamtqty,soaoptarget,0)",
               "RETURN temp"
             ],
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "Sell Out"
           },
           {
@@ -4184,7 +4184,7 @@
               "    DIVIDE ( [Sell Out Amt MTD], [Sell Out Amt MTD LM] ) - 1",
               ")"
             ],
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "Sell Out"
           },
           {
@@ -4197,7 +4197,7 @@
               "    DIVIDE ( [Sell Out Amt YTD], [Sell Out Amt YTD LY] ) - 1",
               ")"
             ],
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "Sell Out"
           },
           {
@@ -4211,7 +4211,7 @@
               "    DIVIDE ( [# of Stores YTD],amtytdlY) - 1",
               ")"
             ],
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "KPI"
           },
           {
@@ -4231,7 +4231,7 @@
               "    DIVIDE ( [Sell Out Amt/Qty MTD],MTDLY  ) - 1",
               ")"
             ],
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "Sell Out"
           },
           {
@@ -4288,7 +4288,7 @@
               "    DIVIDE ( [Sell Out Amt/Qty MTD], [Sell Out Amt/Qty MTD LM]  ) - 1",
               ")"
             ],
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "Sell Out"
           },
           {
@@ -4301,7 +4301,7 @@
               "    DIVIDE ( [Sell Out Amt/Qty YTD], [Sell Out Amt/Qty YTD LY] ) - 1",
               ")"
             ],
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "Sell Out"
           },
           {
@@ -4313,7 +4313,7 @@
               "VAR temp = DIVIDE(soamtqty,soaoptarget,0)",
               "RETURN temp"
             ],
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "Sell Out"
           },
           {
@@ -4346,7 +4346,7 @@
               "    DIVIDE ( [# of Stores MTD],amtmtdlY) - 1",
               ")"
             ],
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "KPI"
           },
           {
@@ -4360,7 +4360,7 @@
               "    DIVIDE ( [# of Stores MTD], [# of Stores MTD LM] ) - 1",
               ")"
             ],
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "KPI"
           },
           {
@@ -4416,7 +4416,7 @@
           {
             "name": "% New Stores / Stores MTD",
             "expression": " DIVIDE([# of New Stores MTD],[# of Stores MTD],BLANK())",
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "KPI"
           },
           {
@@ -4441,7 +4441,7 @@
               "    DIVIDE ([# of ASO MTD],[# of ASO MTD LM] ) - 1",
               ")"
             ],
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "KPI"
           },
           {
@@ -4455,7 +4455,7 @@
               "    DIVIDE ([# of ASO MTD],amt) - 1",
               ")"
             ],
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "KPI"
           },
           {
@@ -4469,7 +4469,7 @@
               "    DIVIDE ([# of ASO YTD],AMT ) - 1",
               ")"
             ],
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "KPI"
           },
           {
@@ -4483,7 +4483,7 @@
               "    DIVIDE ([# of ASO YTD],AMT ) - 1",
               ")"
             ],
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "KPI"
           },
           {
@@ -4581,13 +4581,13 @@
           {
             "name": "% New ASO / ASO MTD",
             "expression": " DIVIDE([# of New ASO MTD],[# of ASO MTD],0)",
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "KPI"
           },
           {
             "name": "% New ASO / ASO YTD",
             "expression": " DIVIDE([# of New ASO YTD],[# of ASO YTD],0)",
-            "formatString": "0.0 %;-0.0 %;0.0 %",
+            "formatString": "0.0%;-0.0%;0.0%",
             "displayFolder": "KPI"
           },
           {
@@ -5484,28 +5484,6 @@
             "formatString": "#,0"
           },
           {
-            "name": "% Route  viếng thăm theo khung giờ",
-            "expression": [
-              " ",
-              "VAR minhour =",
-              "    MIN ( 'Hour in Day'[Hour] )",
-              "VAR maxhour =",
-              "    MAX ( 'Hour in Day'[Hour] )",
-              "VAR result =",
-              "    CALCULATE (",
-              "        DIVIDE (",
-              "            DISTINCTCOUNTNOBLANK ( 'Fact - Actual Visit'[Sales Man] ),",
-              "            [# of MCP Route]",
-              "        ),",
-              "        HOUR ( 'Fact - Actual Visit'[Start Time] ) >= minhour",
-              "            && HOUR ( 'Fact - Actual Visit'[Start Time] ) <= maxhour",
-              "    )",
-              "RETURN",
-              "    result"
-            ],
-            "formatString": "0.00 %;-0.00 %;0.00 %"
-          },
-          {
             "name": "Visited Call in Route",
             "expression": [
               " ",
@@ -5600,6 +5578,10 @@
             "expression": " CALCULATE([# of ASO],'Dim - Product'[Category by Storage in VN]=\"Đông Lạnh\")",
             "formatString": "#,0",
             "displayFolder": "KPI"
+          },
+          {
+            "name": "canh",
+            "expression": "1"
           }
         ]
       },
@@ -6383,7 +6365,7 @@
           {
             "name": "%  Distributor Shelf life",
             "expression": " IF(ISTEXT( [# of Distributor Remaining Shelf life Days]),0,DIVIDE([# of Distributor Shelf life Days], [# of Distributor Remaining Shelf life Days]))",
-            "formatString": "#,0.00 %;-#,0.00 %;#,0.00 %"
+            "formatString": "#,0.00%;-#,0.00%;#,0.00%"
           },
           {
             "name": "# of Distributor Shelf life Days",
@@ -11422,12 +11404,12 @@
           {
             "name": "% Club ASO Buy vs Active",
             "expression": " DIVIDE([# of Club ASO Buy], [# of Club ASO Active])",
-            "formatString": "#,0.0 %;-#,0.0 %;#,0.0 %"
+            "formatString": "#,0.0%;-#,0.0%;#,0.0%"
           },
           {
             "name": "% ASO not buy/ ASO active",
             "expression": " DIVIDE([# of Club ASO not Buy], [# of Club ASO Active])",
-            "formatString": "#,0.00 %;-#,0.00 %;#,0.00 %"
+            "formatString": "#,0.00%;-#,0.00%;#,0.00%"
           },
           {
             "name": "Target Club Sell out",
@@ -11493,7 +11475,7 @@
           {
             "name": "Club Sell Out vs Target",
             "expression": " DIVIDE([Club Sell Out Amt], [Target Club Sell out],0)",
-            "formatString": "0.0 %;-0.0 %;0.0 %"
+            "formatString": "0.0%;-0.0%;0.0%"
           },
           {
             "name": "Club Sell Out Amt LM",
@@ -11526,17 +11508,17 @@
           {
             "name": "Club Sell Out / Total Sell Out",
             "expression": " DIVIDE([Club Sell Out Amt],[Sell Out Amt],0)",
-            "formatString": "0.0 %;-0.0 %;0.0 %"
+            "formatString": "0.0%;-0.0%;0.0%"
           },
           {
             "name": "Club Sell Out / Total Sell Out LM",
             "expression": " CALCULATE( [Club Sell Out / Total Sell Out],DATEADD('Dim - Date'[Date],-1,MONTH))",
-            "formatString": "0.0 %;-0.0 %;0.0 %"
+            "formatString": "0.0%;-0.0%;0.0%"
           },
           {
             "name": "Club Sell Out / Total Sell Out L2M",
             "expression": " CALCULATE( [Club Sell Out / Total Sell Out],DATEADD('Dim - Date'[Date],-2,MONTH))",
-            "formatString": "0.0 %;-0.0 %;0.0 %"
+            "formatString": "0.0%;-0.0%;0.0%"
           },
           {
             "name": "# of Club SKUs of Cooler",
@@ -16050,9 +16032,6 @@
                 "name": "Actual Call/ Route/ Working Day"
               },
               {
-                "name": "% Route  viếng thăm theo khung giờ"
-              },
-              {
                 "name": "# of ASO_Lạnh"
               },
               {
@@ -18678,9 +18657,6 @@
                 "name": "# of ASO_Lạnh"
               },
               {
-                "name": "% Route  viếng thăm theo khung giờ"
-              },
-              {
                 "name": "Actual Call/ Route/ Working Day"
               },
               {
@@ -20766,22 +20742,27 @@
         "members": [
           {
             "memberName": "DTDAI@THMILK.VN",
+            "memberId": "DTDAI@THMILK.VN#AzureAD",
             "identityProvider": "AzureAD"
           },
           {
             "memberName": "thuy.dtt@thmilk.vn",
+            "memberId": "thuy.dtt@thmilk.vn#AzureAD",
             "identityProvider": "AzureAD"
           },
           {
             "memberName": "khoa.nx@thmilk.vn",
+            "memberId": "khoa.nx@thmilk.vn#AzureAD",
             "identityProvider": "AzureAD"
           },
           {
             "memberName": "ndnam@thmilk.vn",
+            "memberId": "ndnam@thmilk.vn#AzureAD",
             "identityProvider": "AzureAD"
           },
           {
             "memberName": "pxchien@thmilk.vn",
+            "memberId": "pxchien@thmilk.vn#AzureAD",
             "identityProvider": "AzureAD"
           }
         ]
