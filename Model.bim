@@ -5566,8 +5566,12 @@
           },
           {
             "name": "canhnguyen",
-            "expression": "2",
+            "expression": "3",
             "formatString": "#,0"
+          },
+          {
+            "name": "duc",
+            "expression": "4"
           }
         ]
       },
